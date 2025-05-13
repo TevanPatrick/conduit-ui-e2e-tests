@@ -1,0 +1,52 @@
+# 🧪 Playwright E2E Test Suite
+
+This project contains **end-to-end tests** written with [Playwright](https://playwright.dev/), covering key user flows and validation logic for a blogging platform.
+
+---
+
+## 👤 User Types
+
+The tests are structured to simulate interactions from two primary user roles:
+
+1. **Reader** — Unauthenticated user (view-only)
+2. **Blogger** — Authenticated user (create/edit/delete access)
+
+---
+
+## ✅ Test Coverage
+
+The suite includes the following test categories:
+
+- **Happy Path Tests**
+- **Negative Tests**
+- **Security Checks**
+
+---
+
+## 🌐 Supported Browsers
+
+Playwright runs tests across multiple browsers:
+
+- **Chromium** (Google Chrome)
+- **Firefox**
+
+---
+
+## ⚙️ Environment Setup
+
+### 🔒 Local `.env` File
+
+For local development, use the `.env` file in the root of your project with the following variables:
+
+```env
+homeUrl=
+loginUrl=
+signupUrl=
+newArticleEditorUrl=
+articleUrl=
+settingsUrl=
+authEmail=
+authPassword=
+invalidEmail=
+invalidPassword=
+```
