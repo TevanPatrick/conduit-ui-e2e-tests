@@ -38,6 +38,8 @@ Playwright runs tests across multiple browsers:
 
 For local development, use the `.env` file in the root of your project with the following variables:
 
+For the github action tests that is not advisable for security, we would use the github secrets in the yaml file like the run-e2e-tests.yml file we have in the workflows folder.
+
 ```env
 homeUrl=
 loginUrl=
@@ -50,3 +52,37 @@ authPassword=
 invalidEmail=
 invalidPassword=
 ```
+
+---
+
+## 🚀 **Running tests**
+
+1. Add your valid login credentials in the .env file for below fields below:
+
+- authEmail=
+- authPassword=
+
+2. Then open your terminal and enter the below command to run tests in headed mode:
+
+- npx playwright test (headless mode)
+
+OR
+
+- npm run test:headed (headed mode)
+
+3. Once tests are done you can view the terminal listed results or html report.
+
+---
+
+## 🧵 **Concurrency**
+
+The tests are running on 2 workers for quicker test runs. This can be increased for performance reasons etc.
+
+---
+
+## 🔔 **Notifications on test failures**
+
+We added slack notification script in the run-e2e-tests.yml file with below base message copy:
+
+- Passed message: Great, the e2e tests passed in ...
+- Failed message: You have failed tests in ...
