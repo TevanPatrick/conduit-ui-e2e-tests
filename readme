@@ -1,6 +1,6 @@
 # 🧪 Playwright E2E Test Suite
 
-This project contains **end-to-end tests** written with [Playwright](https://playwright.dev/), covering key user flows and validation logic for a blogging platform.
+This project contains **end-to-end tests** written with [Playwright](https://playwright.dev/), covering key user flows and validation logic for Conduit app.
 
 ---
 
@@ -62,7 +62,7 @@ invalidPassword=
 - authEmail=
 - authPassword=
 
-2. Then open your terminal and enter the below command to run tests in headed mode:
+2. Then open your terminal and enter the below command to run tests:
 
 - npx playwright test (headless mode)
 
